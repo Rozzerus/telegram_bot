@@ -9,10 +9,8 @@ bot = telebot.TeleBot(token)
 def get_text_messages(message):
     if message.text.lower() == "Привет":
         bot.send_message(chat_id=message.chat.id, text="Привет, чем я могу тебе помочь?")
-    elif message.text == "/help":
-        bot.send_message(chat_id=message.chat.id, text="Напиши привет")
-    elif "скажи" in message.text.lower():
-        bot.send_message(chat_id=message.chat.id, text="привет мир")
+    elif "бот скажи: " in message.text.lower():
+        bot.send_message(chat_id=message.chat.id, text=message.text.split(":", 1)[1])
     elif "пиво" in message.text.lower():
         bot.send_message(chat_id=message.chat.id, text="пива нет но ты держись")
     elif "греб" in message.text.lower():
