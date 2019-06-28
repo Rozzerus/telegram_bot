@@ -1,1 +1,1 @@
-worker: python rozzer_telegram_bot/main.py
+bot: python rozzer_telegram_bot/main.py
