@@ -9,7 +9,7 @@ dialogflow_token = os.environ['DIALOGFLOW_TOKEN']
 bot = telebot.TeleBot(bot_token)
 
 trigger_words = ['@rozzercatspamerbot', 'rowerbot', 'бот', 'кот', 'пиво', 'привет', 'пока', 'дом', 'дим', 'греб',
-                 'галера', 'эй ', 'говно', 'обед', 'еда', 'гор', 'кур', 'ху', 'жен']
+                 'галера', 'эй ', 'говно', 'обед', 'еда', 'гор', 'кур', 'ху', 'жен', 'нет']
 
 
 @bot.message_handler(content_types=['text'])
