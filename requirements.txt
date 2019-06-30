@@ -1,3 +1,3 @@
 telebot
-apiai-1.2.3
+apiai
 pyTelegramBotAPI==3.6.6
